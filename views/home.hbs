@@ -1,0 +1,47 @@
+<div class="row mb-4">
+    <div class="col-12">
+        <h1>Hola de nuevo {{user.name}}</h1>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 col-sm-3">
+        <div class="shadow card rounded-lg text-white bg-dark">
+            <div class="card-header">
+                <h2>Total de tareas</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Total de tareas registradas hasta ahora:
+                    <span class="badge badge-light text-dark p-2">{{taskMeta.totalTasks}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-3">
+        <div class="shadow card rounded-lg text-white bg-dark ml-3">
+            <div class="card-header">
+                <h2>Finalizadas</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Total de tareas finalizadas hasta ahora:
+                    <span class="badge badge-light text-dark p-2">{{taskMeta.totalFinishedTasks}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-3">
+        <div class="shadow card rounded-lg text-white bg-dark ml-3">
+            <div class="card-header">
+                <h2>Sin finalizar</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Total de tareas no finalizadas:
+                    <span class="badge badge-light text-dark p-2">{{taskMeta.totalNotFinishedTasks}}</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
